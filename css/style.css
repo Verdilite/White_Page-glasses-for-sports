@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ___________________ */
+body{
+    font-family: 'DM Sans', sans-serif;
+    background: #F5F5F5;
+}
+a{
+    text-decoration: none;
+}
+body>p{
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 9px 0;
+}
+header{
+    position: sticky;
+    width: 1440px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+header img{
+    margin-left: 42px;
+}
+header ul{
+    margin-left: 131px;
+}
+header ul li{
+    display: inline-block;
+    margin-right: 62px;
+}
+header ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0A0A0A;
+    text-transform: uppercase;
+}
+header ul li a:focus{
+    color: #FEA14A;background: linear-gradient(135deg, #FF7324 14.84%, #EE3B28 35.81%, #DA1500 51.16%, #EE3B28 67.63%, #FEA14A 86.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+header ul+ul li a{
+    display: block;
+    width: 20px; 
+    height: 21px;
+    background: url(../content/elements/css_sprites.png) -88px -320px;
+}
+header ul+ul li+li a{
+    display: block;
+    width: 20px; 
+    height: 21px;
+    background: url(../content/elements/css_sprites.png) -109px -320px;
+}
+header ul+ul li+li+li a{
+    display: block;
+    width: 20px; 
+    height: 21px;
+    background: url(../content/elements/css_sprites.png) -0 -356px;
+}
+body>ul{
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 49px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 400;
+}
+body>ul li{
+    position: relative;
+    display: inline-block;
+    margin-right: 80px;
+}
+body>ul li a p{
+    display: inline;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    width: 95px;
+    font-size: 13px;
+    color: #0A0A0A;
+    opacity: 0.7;
+}
+
+body>ul li a{
+    display: block;
+}
+body>ul li a{
+    width: 88px; 
+    height: 38px;
+    background: url(../content/elements/css_sprites.png) -440px -280px;
+    background-repeat: no-repeat;
+}
+body>ul li+li a{
+    width: 88px; 
+    height: 38px;
+    background: url(../content/elements/css_sprites.png) -352px -280px;
+}
+body>ul li+li+li a{
+    width: 88px; height: 38px;
+    background: url(../content/elements/css_sprites.png) -264px -280px;
+}
+body>ul li+li+li+li a{
+    width: 88px; height: 40px;
+    background: url(../content/elements/css_sprites.png) -0 -280px;
+}
+body>ul li+li+li+li+li a{
+    width: 88px; height: 36px;
+    background: url(../content/elements/css_sprites.png) -0 -320px;
+}
+body>ul li+li+li+li+li+li a{
+    width: 88px; height: 40px;
+    background: url(../content/elements/css_sprites.png) -176px -280px;
+}
+body>ul li+li+li+li+li+li+li a{
+    width: 88px; height: 40px;
+    background: url(../content/elements/css_sprites.png) -88px -280px;
+}
+.wrapper_full_scrien_first{
+    width: 100%;
+    background: url(../content/fon/first1.png) no-repeat center;
+    background-size: cover;
+}
+
+.site_classic{
+    width: 1440px;
+    margin: 30px auto;
+}
+.wrapper_full_scrien_first section{
+    width: 300px;
+    margin-left: 130px;
+    padding-top: 146px;
+}
+.wrapper_full_scrien_first H1{
+    position: relative;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    letter-spacing: 5px;
+}
+.wrapper_full_scrien_first H1::after{
+    content: "The New";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    padding: 4px 8px;
+    background-color: #009AFF;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.wrapper_full_scrien_first h1+a{
+   color: #009AFF;
+}
+.wrapper_full_scrien_first a+p{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.wrapper_full_scrien_first p+a{
+    position: relative;
+    color:black;
+    padding: 18px 147px 20px 15px;
+    background: white;
+}
+.wrapper_full_scrien_first p+a::after{
+    content: "❯";
+    position: absolute;
+    font-size: 14px;
+    right: 22px;
+}
+.wrapper_full_scrien_first ul{
+    margin-top: 75px;
+    display: block;
+}
+
+.wrapper_full_scrien_first ul li a{
+    float: left;
+    display: inline-block;
+    background: #F6F6F6;
+    opacity: 0.2;
+    width: 69px;
+    height: 4px;
+    margin-left: 8px;
+}
+.wrapper_full_scrien_first ul li a:focus{
+    background: #009AFF;
+    opacity: 1;
+}
+
+.wrapper_full_scrien_first ul:after{
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 72px;
+}
+.main_top_sell{
+    display: flex;
+}
+
+.main_top_sell a{
+    width: 440px;
+    position: relative;
+    color: black;
+    font-weight: 400;
+    margin: 0 11px;
+}
+.main_top_sell a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 220px;
+    left: 50%;
+    margin-left: -137px;
+    width: 274px;
+    height: 143px;
+    background: url(../content/main_top_sell/css_sprites.png) 0 -143px;
+}
+.main_top_sell a+a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 220px;
+    left: 50%;
+    margin-left: -137px;
+    width: 274px;
+    height: 143px;
+    background: url(../content/main_top_sell/css_sprites.png) 0 0;
+}
+.main_top_sell a+a+a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 220px;
+    left: 50%;
+    margin-left: -137px;
+    width: 274px;
+    height: 143px;
+    background: url(../content/main_top_sell/css_sprites.png) -274px 0;
+}
+.main_top_sell a::before{
+    content: "STEFAN MULLER CHOICE";
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 24px;
+    left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.main_top_sell a+a::before{
+    content: "CHLOE KELLERMAN";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.main_top_sell a+a+a::before{
+    content: "ADRIEN BRODLEY";
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 24px;
+    left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.main_top_sell section{
+    width: 380px;
+    padding: 0 30px;
+    padding-top: 65px;
+    padding-bottom: 30px;
+    background: white;
+}
+.main_top_sell section p{
+    margin-bottom: 4px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+.main_top_sell section h2{
+    font-size: 24px;
+}
+.main_top_sell section h2+p{
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 8px;
+}
+.main_top_sell section h2+p+p{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: right;
+    opacity: 1;
+    margin-top: 24px;
+}
