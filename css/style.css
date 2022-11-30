@@ -61,11 +61,15 @@ body>p{
 }
 header{
     position: sticky;
+    top: 0;
     width: 1440px;
-    margin: 30px auto;
+    height: 60px;
+    margin: 0 auto;
+    background: #F5F5F5;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    z-index: 20;
 }
 header img{
     margin-left: 42px;
@@ -179,6 +183,7 @@ body>ul li+li+li+li+li+li+li a{
 .site_classic{
     width: 1440px;
     margin: 30px auto;
+    margin-bottom: 75px;
 }
 .wrapper_full_scrien_first section{
     width: 300px;
@@ -254,6 +259,7 @@ body>ul li+li+li+li+li+li+li a{
 }
 .main_top_sell{
     display: flex;
+    justify-content: center
 }
 
 .main_top_sell a{
@@ -261,7 +267,9 @@ body>ul li+li+li+li+li+li+li a{
     position: relative;
     color: black;
     font-weight: 400;
-    margin: 0 11px;
+}
+.main_top_sell a:nth-child(2){
+    margin: 0 22px;
 }
 .main_top_sell a::after{
     content: "";
@@ -353,4 +361,85 @@ body>ul li+li+li+li+li+li+li a{
     text-align: right;
     opacity: 1;
     margin-top: 24px;
+}
+
+body>aside{
+    width: 1362px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 74px;
+    background: url(../content/fon/e0.png) no-repeat;
+
+}
+
+body>aside::after{
+    content: "";
+    position: absolute;
+    top: -75px;
+    right: 140px;
+    width: 500px;
+    height: 500px;
+    background: url(../content/glasses/e1.png) no-repeat;
+}
+body>aside::before{
+    content: "";
+    position: absolute;
+    top: 48px;
+    right: 29px;
+    width: 500px;
+    height: 500px;
+    background: url(../content/glasses/e2.png) no-repeat;
+    z-index: 5;
+}
+body>aside section{
+    margin-left: 116px;
+    padding-top: 105px;
+    font-weight: 400;
+}
+body>aside section p{
+    width: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+body>aside section h2{
+    margin: 4px 0;
+    font-size: 40px;
+}
+body>aside section p+div{
+    margin-top: 80px;
+}
+body>aside section div>a{
+    position: relative;
+    display: inline-block;
+    background: white;
+    margin-right: 59px;
+    width: 229px;
+    padding: 17px 0;
+    padding-left: 16px;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 135px;
+}
+body>aside section div>a::before{
+    content: "❯";
+    position: absolute;
+    font-size: 16px;
+    right: 21px;
+}
+body>aside section div>a::after{
+    content: "Size L";
+    position: absolute;
+    font-size: 16px;
+    top: -23px;
+    left: 0;
+    opacity: 0.7;
+}
+body>aside section div>a+a::after{
+    content: "Size S";
+    position: absolute;
+    font-size: 16px;
+    top: -23px;
+    left: 0;
+    opacity: 0.7;
 }
